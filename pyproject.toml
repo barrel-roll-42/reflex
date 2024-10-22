@@ -59,6 +59,7 @@ twine = ">=4.0.0,<6.0"
 tomlkit = ">=0.12.4,<1.0"
 lazy_loader = ">=0.4"
 reflex-chakra = ">=0.6.0"
+asgiproxy = "^0.1.1"
 
 
 [tool.poetry.group.dev.dependencies]
@@ -102,8 +103,6 @@ lint.pydocstyle.convention = "google"
 "*.pyi" = ["D301", "D415", "D417", "D418", "E742"]
 "*/blank.py" = ["I001"]
 
-[tool.poetry.extras]
-proxy = ["asgiproxy"]
 
 [tool.pytest.ini_options]
 asyncio_default_fixture_loop_scope = "function"
